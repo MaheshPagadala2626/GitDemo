@@ -50,14 +50,9 @@ public class E2E_Tests {
  
          //This bookId will be used in later requests, to add the book with respective isbn
         String bookId = books.get(0).get("description");
-        System.out.println(bookId);
+        System.out.println("Book Id Description  : \n"+ bookId);
         
-        RestAssured.baseURI = "https://restapi.demoqa.com/utilities/weather/city";
-        RequestSpecification httpRequest = RestAssured.given();
-        Response response1 = httpRequest.request(Method.GET, "/Hyderabad");
-        String responseBody = response1.getBody().asString();
-        System.out.println("Response Body is =>  " + responseBody);
-        
+     
 	}
 
 }
