@@ -51,7 +51,7 @@ public class E2E_Tests {
          //This bookId will be used in later requests, to add the book with respective isbn
         String bookId = books.get(0).get("description");
         System.out.println("Book Id Description  : \n"+ bookId);
-        
+        System.out.println("Book Id Description  : \n"+ bookId);
      
 	}
 
